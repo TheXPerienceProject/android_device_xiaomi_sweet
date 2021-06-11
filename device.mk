@@ -153,6 +153,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
 # WiFi Display
 PRODUCT_PACKAGES += \
     libdisplayconfig.qti \
