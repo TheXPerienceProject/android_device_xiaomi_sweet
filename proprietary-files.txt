@@ -1954,3 +1954,20 @@ vendor/lib64/camera/com.qti.tuned.sweet_sunny_s5kgw3_wide.bin|db7480734847ad2c1e
 
 # From NX627J 20201029.204053
 vendor/lib64/libsdedrm.so|582910d21139781ad9e414c35207584f51e035e2
+
+# Perf XPe
+system_ext/lib/libbeluga.so
+system_ext/lib/libdolphin.so
+system_ext/lib/libsmomo.qti.so
+system_ext/lib/libsmomoconfig.qti.so
+system_ext/lib64/libbeluga.so
+system_ext/lib64/libdolphin.so
+system_ext/lib64/libsmomo.qti.so
+system_ext/lib64/libsmomoconfig.qti.so
+-vendor/app/pasrservice/pasrservice.apk
+vendor/bin/hw/vendor.qti.power.pasrmanager@1.0-service
+vendor/etc/init/vendor.qti.power.pasrmanager@1.0-service.rc
+vendor/lib/hw/vendor.qti.power.pasrmanager@1.0-impl.so
+vendor/lib/vendor.qti.power.pasrmanager@1.0.so
+vendor/lib64/hw/vendor.qti.power.pasrmanager@1.0-impl.so
+vendor/lib64/vendor.qti.power.pasrmanager@1.0.so
