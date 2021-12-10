@@ -1,0 +1,8 @@
+[
+ {
+   "remote": "Unicorn",
+   "repository"  : "vendor_xiaomi_sweet",
+   "target_path" : "vendor/xiaomi/sweet",
+   "branch": "xpe-16.0-caf"
+ }
+]
