@@ -379,3 +379,8 @@ PRODUCT_PACKAGES += \
     libgui-shim
 
 include vendor/xiaomi/sweet/sweet-vendor.mk
+
+TARGET_BOARD_PLATFORM := sm6150
+TARGET_PROVIDES_POWERHAL := true
+TARGET_COMMON_QTI_COMPONENTS := \
+    perf
