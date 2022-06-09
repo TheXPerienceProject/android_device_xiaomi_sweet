@@ -672,5 +672,14 @@
         </interface>
         <fqname>@1.0::IMiFxTunnel/default</fqname>
     </hal>
+    <hal format="hidl">
+        <name>vendor.qti.power.pasrmanager</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IPasrManager</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <kernel target-level="5"/>
 </manifest>
