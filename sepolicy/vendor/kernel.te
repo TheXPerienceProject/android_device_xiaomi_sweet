@@ -1,0 +1,8 @@
+# For zram writeback
+allow kernel per_boot_file:file r_file_perms;
+
+#allow kernel to kill swap
+allow kernel kernel:capability kill;
+
+# Allow the worker to be created
+allow kernel kernel:qipcrtr_socket create;
