@@ -378,6 +378,7 @@ TARGET_PROVIDES_POWERHAL := true
 # Qualcomm kernel.
 TARGET_COMPILE_WITH_MSM_KERNEL := true
 TARGET_COMMON_QTI_COMPONENTS := \
+    gralloc_not_reserved \
     perf
 
 include vendor/xiaomi/sweet/sweet-vendor.mk
