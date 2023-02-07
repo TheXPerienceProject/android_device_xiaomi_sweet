@@ -180,10 +180,6 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/google/pixel
 
-# Perf
-PRODUCT_PACKAGES += \
-    libqti-perfd-client
-
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.xiaomi-libperfmgr
@@ -390,6 +386,11 @@ PRODUCT_PACKAGES += \
 # Platform
 MSMSTEPPE := sm6150
 TARGET_BOARD_PLATFORM := $(MSMSTEPPE)
-
+TARGET_KERNEL_VERSION := 4.14
+TARGET_PROVIDES_POWERHAL := true
+# Qualcomm kernel.
+TARGET_COMPILE_WITH_MSM_KERNEL := true
+TARGET_COMMON_QTI_COMPONENTS := \
+    perf
 
 include vendor/xiaomi/sweet/sweet-vendor.mk
