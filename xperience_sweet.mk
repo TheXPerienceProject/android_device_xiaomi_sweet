@@ -6,7 +6,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/sweet/device.mk)
 
 # Inherit common XPerience configurations
-$(call inherit-product, vendor/arxperiencerow/config/common.mk)
+$(call inherit-product, vendor/xperience/config/common.mk)
 
 PRODUCT_NAME := xperience_sweet
 PRODUCT_DEVICE := sweet
