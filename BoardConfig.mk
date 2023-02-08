@@ -11,7 +11,7 @@ TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_VARIANT := cortex-a76
 
 TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv8-a
+TARGET_2ND_ARCH_VARIANT := armv8-2a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a76
@@ -46,6 +46,10 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := sweet_user_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sweet
 TARGET_KERNEL_ARCH := arm64
+TARGET_KERNEL_ADDITIONAL_FLAGS += HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument" 
+TARGET_KERNEL_ADDITIONAL_FLAGS += \
+    LLVM=1 \
+    LLVM_IAS=1
 
 # Partitions
 BOARD_SUPER_PARTITION_SIZE := 9126805504
@@ -161,6 +165,7 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
 TARGET_DISABLED_UBWC := true
 
 # Power
-TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
+# TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
+
 
 include vendor/xiaomi/sweet/BoardConfigVendor.mk
